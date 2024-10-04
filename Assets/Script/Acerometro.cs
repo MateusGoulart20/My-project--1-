@@ -92,11 +92,7 @@ public class Acerometro : MonoBehaviour
             norma[0] *= 10;
             norma[1] *= 10;
             norma[2] *= 10;
-            Debug.Log("A-" + alvo + " x:"
-              + aceleracao[0] + " y:" + aceleracao[1]
-              + " z:" + aceleracao[2] + " x:" + norma[0]
-              + " y:" + norma[1] + " z:" + norma[2]);
-            Debug.Log("A-" + alvo + " x:" + x + " y:" + y + " z:" + z);
+            
             if (aceleracao[2] > 0)  {
               alvo0.transform.Translate(
                 aceleracao[2] * speed 
