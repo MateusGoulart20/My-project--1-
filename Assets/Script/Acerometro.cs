@@ -157,18 +157,14 @@ public class Acerometro : MonoBehaviour
             break;
         }
 
-      }
-      catch (System.Exception ex)
-      {
+      }  catch (System.Exception ex)  {
         Debug.LogWarning(ex.Message);
       }
     }
   }
 
-  void OnApplicationQuit()
-  {
-    if (serialPort != null && serialPort.IsOpen)
-    {
+  void OnApplicationQuit()  {
+    if (serialPort != null && serialPort.IsOpen)  {
       serialPort.Close();
     }
   }
